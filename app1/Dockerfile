@@ -2,7 +2,6 @@ FROM python:3.9-alpine
 
 WORKDIR /app
 
-# Instalar dependências do sistema necessárias para compilar wheel do Flask (caso necessário)
 RUN apk add --no-cache gcc musl-dev libffi-dev
 
 COPY requirements.txt .
